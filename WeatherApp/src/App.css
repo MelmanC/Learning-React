@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h1 {
+  color: red;
+  font-size: 3rem;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+.App-link {
+  color: #61dafb;
+}
