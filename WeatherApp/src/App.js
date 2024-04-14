@@ -7,7 +7,7 @@ function App() {
 
   const handleWeather = async (event) => {
     event.preventDefault();
-    const apiKey = '65a7553024ad1a9a67f43f4b46f99993';
+    const apiKey = 'YOUR_API_KEY';
 
     try {
       const response  = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
