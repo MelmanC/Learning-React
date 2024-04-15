@@ -12,7 +12,6 @@ function App() {
     try {
       const response  = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
       const data = await response.json();
-      console.log(data);
       setWeather(data);
     } catch (error) {
       console.error(error);
@@ -29,9 +28,9 @@ function App() {
       </form>
       <br/>
       <br/>
-      <h2>{weather.name} {weather.sys && weather.sys.country}</h2>
-      <h3>{weather.weather && weather.weather[0].description}</h3>
-      <h3>{weather.main && weather.main.temp} {weather.name ? "°C" : ""}</h3>
+      <h2>{weather.name} {weather.sys.country}</h2>
+      <h3>{weather.weather[0].description}</h3>
+      <h3>{weather.main.temp} {weather.name ? "°C" : ""}</h3>
     </div>
   );
 }
